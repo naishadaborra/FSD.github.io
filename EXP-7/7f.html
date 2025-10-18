@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp Object Example</title>
+</head>
+<body>
+    <h2>RegExp Object Demo</h2>
+    <script>
+        let pattern = /html/i;
+        let text = "This is a HTML document";
+        let result = pattern.test(text);
+        let match = text.match(pattern);
+
+        document.write("Pattern: " + pattern + "<br>");
+        document.write("Test Result: " + result + "<br>");
+        document.write("Match Found: " + match + "<br>");
+    </script>
+</body>
+</html>

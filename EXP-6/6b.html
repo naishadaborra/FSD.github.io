@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>6b - Output Methods</title>
+    <script>
+        function showOutputs() {
+            alert("This is Alert Box");
+            document.write("<p>This is document.write()</p>");
+            console.log("This is console.log()");
+            document.getElementById("output").innerHTML = "This is innerHTML output";
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript Output Methods</h2>
+    <button onclick="showOutputs()">Show Outputs</button>
+    <div id="output"></div>
+</body>
+</html>

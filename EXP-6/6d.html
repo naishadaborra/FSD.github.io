@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>6d - Voter Eligibility</title>
+    <script>
+        function checkVoter() {
+            let name = prompt("Enter your Name:");
+            let age = parseInt(prompt("Enter your Age:"));
+            let status = (age >= 18) ? "Eligible to Vote" : "Not Eligible to Vote";
+
+            let table = `
+                <table border="1" cellpadding="10">
+                    <tr><th>Name</th><th>Age</th><th>Status</th></tr>
+                    <tr><td>${name}</td><td>${age}</td><td>${status}</td></tr>
+                </table>
+            `;
+            document.getElementById("result").innerHTML = table;
+        }
+    </script>
+</head>
+<body onload="checkVoter()">
+    <h2>Voter Eligibility Check</h2>
+    <div id="result"></div>
+</body>
+</html>

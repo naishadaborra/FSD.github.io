@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors - All Types</title>
+    <style>
+        h1 { color: blue; }
+        #special { color: red; }
+        .highlight { background: yellow; }
+        h2, p { font-family: Arial; }
+        * { margin: 5px; }
+
+        
+        div p { color: green; }
+        div > span { color: blue; }
+        .combo + p { color: red; }
+        .combo ~ p { color: purple; }
+
+        
+        a:hover { color: orange; }
+        input:focus { border: 2px solid red; }
+
+       
+        .pseudo p::first-letter { font-size: 24px; color: brown; }
+        .pseudo p::after { content: " [Read more]"; color: gray; }
+
+        
+        input[type="text"] { background: lightyellow; }
+        a[target="_blank"] { color: darkblue; }
+    </style>
+</head>
+<body>
+    <h1>Experiment 4: Selector Forms</h1>
+
+    <h2>i. Simple Selectors</h2>
+    <p id="special">This uses an ID selector.</p>
+    <p class="highlight">This uses a Class selector.</p>
+    <h2>Group Selector Example</h2>
+    <p>Universal Selector applies to all elements.</p>
+
+    <h2>ii. Combinator Selectors</h2>
+    <div>
+        <p>Descendant selector (inside DIV).</p>
+        <span>Child selector (span inside DIV).</span>
+    </div>
+    <h3 class="combo">Heading for Sibling Selectors</h3>
+    <p>Adjacent sibling (right after heading).</p>
+    <p>General sibling (any paragraph after heading).</p>
+
+    <h2>iii. Pseudo-class Selectors</h2>
+    <a href="#">Hover over this link</a><br><br>
+    <input type="text" placeholder="Click here for focus effect">
+
+    <h2>iv. Pseudo-element Selectors</h2>
+    <div class="pseudo">
+        <p>This paragraph shows pseudo-elements in action.</p>
+    </div>
+
+    <h2>v. Attribute Selectors</h2>
+    <input type="text" placeholder="Text input"><br><br>
+    <input type="password" placeholder="Password input"><br><br>
+    <a href="https://google.com" target="_blank">Google Link (opens in new tab)</a>
+</body>
+</html>

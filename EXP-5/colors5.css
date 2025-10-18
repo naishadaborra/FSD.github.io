@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 40px;
+}
+
+h2 {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.name { color: red; }
+.hex { color: #00ff00; }
+.rgb { color: rgb(0, 0, 255); }
+.rgba { color: rgba(255, 0, 0, 0.5); }
+.hsl { color: hsl(200, 100%, 50%); }
